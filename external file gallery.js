@@ -6,7 +6,7 @@ function upDate(previewPic) {
 
 function unDo() {
   var imageDiv = document.getElementById("image");
-  imageDiv.style.backgroundImage = "url('img/budatin castle.jpg')";
+  imageDiv.style.backgroundImage = "url('')"; // Fixed: Empty URL as requested for onmouseout and onblur
   imageDiv.innerHTML = "Hover over an image below to display here.";
 }
 
@@ -16,3 +16,4 @@ window.onload = function() {
     images[i].setAttribute("tabindex", "0");
   }
 };
+
