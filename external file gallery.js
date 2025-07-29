@@ -2,10 +2,8 @@ function upDate(previewPic) {
   var imageDiv = document.getElementById("image");
   imageDiv.style.backgroundImage = "url('" + previewPic.src + "')";
   imageDiv.innerHTML = previewPic.alt;
-
-  // Set the width and height of the imageDiv to match the previewPic
-  imageDiv.style.width = previewPic.naturalWidth + 'px'; // Use naturalWidth for original image width
-  imageDiv.style.height = previewPic.naturalHeight + 'px'; // Use naturalHeight for original image height
+  imageDiv.style.width = previewPic.naturalWidth + 'px'; 
+  imageDiv.style.height = previewPic.naturalHeight + 'px';
 }
 
 function unDo() {
